@@ -61,7 +61,8 @@ public:
 	Cat& operator++(){	++Nested::count;	return *this;	};
 	Cat& operator--(){	--Nested::count;	return *this;	}; 
 	Cat operator+(float Weight) { Cat* TempObject;	TempObject = this;	TempObject->weight += Weight;	
-																return *TempObject; }; 
+																
+return *TempObject; }; 
 };
 
 
@@ -81,7 +82,7 @@ public:
 	Dog& operator++(){	++Nested::count; 	return *this;	}; 
 	Dog& operator--(){	--Nested::count;	return *this;	}; 
 	Dog operator+(float Weight) { Dog* TempObject;	TempObject = this;	TempObject->weight += Weight;	
-																return *TempObject; }; 
+return *TempObject; }; 
 };
 
 int Cat::Nested::count = 0;
